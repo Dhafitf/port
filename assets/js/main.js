@@ -1,35 +1,4 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
-const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
-
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
-if(navToggle) {
-    navToggle.addEventListener('click', () =>{
-        navMenu.classList.add('show-menu')
-    })
-}
-
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
-if(navClose) {
-    navClose.addEventListener('click', () =>{
-        navMenu.classList.remove('show-menu')
-    })
-}
-
-/*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll('.nav_link')
-
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
-
-/*==================== ACCORDION SKILLS ====================*/
+/*==================== SKILLS ====================*/
 const skillsContent = document.getElementsByClassName('skills_content'),
       skillsHeader = document.querySelectorAll('.skills_header')
 
@@ -48,8 +17,6 @@ skillsHeader.forEach((el) => {
     el.addEventListener('click', toggleSkills)
 })
 
-/*==================== QUALIFICATION TABS ====================*/
-
 
 /*==================== SERVICES MODAL ====================*/
 const modalViews = document.querySelectorAll('.services_modal'),
@@ -60,8 +27,8 @@ let modal = function(modalClick){
     modalViews[modalClick].classList.add('active-modal')
 }
 
-modalBtns.forEach((modalBtns, i) => {
-    modalBtns.addEventListener('click', () =>{
+modalBtns.forEach((modalBtn, i) => {
+    modalBtn.addEventListener('click', () =>{
         modal(i)
     })
 })
@@ -73,13 +40,6 @@ modalCloses.forEach((modalCloses) => {
         })
     })
 })
-
-
-/*==================== PORTFOLIO SWIPER  ====================*/
-
-
-/*==================== TESTIMONIAL ====================*/
-
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
@@ -117,16 +77,17 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp)
 
-/*==================== DARK LIGHT THEME ====================*/ 
+/*==================== Scroll ====================*/ 
 const sr = ScrollReveal({
     origin: 'top',
     distance: '30px',
-    duration: 1200,
-    reset: true
+    duration: 900,
+    reset: false
 });
 
-sr.reveal(`.home_social, .home_data, .home_img,
-            .about_data, .about_img,
-            .services_content, .skills_header, .skills_data`, {
-    interval: 100
+sr.reveal(`.section_title, .section_subtitle, 
+            .home_social, .home_data, .home_img,
+            .about_data, .about_img, .grid_project,
+            .tools-img-content, .skills_header, .skills_data`, {
+    interval: 50
 })
