@@ -1,4 +1,4 @@
-/*==================== SERVICES MODAL ====================*/
+/*==================== MODAL ====================*/
 const modalViews = document.querySelectorAll('.services_modal'),
       modalBtns = document.querySelectorAll('.services_button'),
       modalCloses = document.querySelectorAll('.services_modal-close')
@@ -21,7 +21,7 @@ modalCloses.forEach((modalCloses) => {
     })
 })
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+/*==================== SCROLL ACTIVE ====================*/
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -41,37 +41,13 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
+/*==================== HEADER ====================*/ 
 function scrollHeader(){
     const nav = document.getElementById('header')
     // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
     if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
-
-/*==================== QUALI ====================*/
-function dev(evt, cityName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
-
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-document.getElementById("tabsActive").click();
 
 /*==================== SHOW SCROLL UP ====================*/ 
 function scrollUp(){
@@ -96,7 +72,7 @@ sr.reveal(`.section_title, .section_subtitle,
     origin: 'top',
 })
 
-sr.reveal(`.home-social, .tentang-text`, {
+sr.reveal(`.home-social, .tentang-text, .grid_project`, {
     interval: 150,
     origin: 'left',
 })
