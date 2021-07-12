@@ -222,11 +222,7 @@ button {
     .nav_icon {
     font-size: 18px;
     }
-
-    .tools-img-content {
-        width: 15%;
-        margin: 5px 20px;
-    }
+    
     .nav_logo {
         display: none;
     }
@@ -278,6 +274,17 @@ button {
 /* Change background header */
 .scroll-header {
     box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+}
+
+.overlay {
+    position: absolute;
+    background-color: aquamarine;
+    transform: rotate(-90deg);
+    align-self: flex-end;
+}
+
+.ov-lt {
+    font-size: 144px;
 }
 
 /*==================== HOME ====================*/
@@ -375,6 +382,8 @@ button {
 .button-white {
     background-color: #fff;
     color: var(--first-color);
+    width: 7rem;
+    text-align: center;
 }
 
 .button-white:hover {
@@ -578,18 +587,6 @@ button {
     visibility: visible;
 }
 
-/*==================== PORTFOLIO ====================*/
- .tools_container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.tools-img-content {
-    position: relative;
-    text-align: center;
-}
-
 /*==================== PROJECT IN MIND ====================*/
 .project {
     text-align: center;
@@ -597,16 +594,12 @@ button {
 
 .project_bg {
     background-color: var(--first-color-second);
-    padding-top: 3rem;
+    padding: 2rem;
 }
 
 .project_title {
     font-size: var(--h2-font-size);
     margin-bottom: var(--mb-0-75);
-}
-
-.project_description {
-    margin-bottom: var(--mb-1-5);
 }
 
 .project_title,
@@ -629,46 +622,16 @@ button {
 }
 
 .entry-title-link {
-    color: #000;
+    color: #fff;
 }
 
-.entry-image:hover {
-    opacity: 0.8;
-    transition: .3s ease;
-}
-
-/*=============== QUALI ===============*/
-.quali_tabs {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: var(--mb-2);
-}
-
-.quali_button {
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
-    cursor: pointer;
-}
-
-.quali_button:hover {
+.entry-title-link:hover {
     color: var(--first-color);
 }
 
-.quali_icon {
-    font-size: 1.8rem;
-    margin-right: var(--mb-0-25);
-}
-
-.quali [data-content] {
-    display: none;
-}
-
-.quali_active [data-content] {
-    display: block;
-}
-
-.quali_data {
-    display: block;
+.entry-image:hover {
+    opacity: 0.6;
+    transition: .3s ease;
 }
 
 /*== CUK ==*/
@@ -712,6 +675,10 @@ button {
 @keyframes fadeEffect {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+.entry-header {
+    margin-top: .5rem;
 }
 
 /*==================== FOOTER ====================*/
@@ -880,6 +847,11 @@ button {
     .place__container {
         grid-template-columns: 1fr; }
     
+    .button-white {
+        width: 5rem;
+        font-size: 9px;
+    }
+    
 }
 
 /* For medium devices */
@@ -930,6 +902,7 @@ button {
         display: flex;
         justify-content:center;
         align-items: center;
+        gap: 1rem;
     }
     
 }
@@ -980,7 +953,7 @@ button {
         display: flex;
         column-gap: 2rem;
     }
-    
+
     .nav_menu {
         margin-left: auto;
     }
@@ -1038,7 +1011,7 @@ button {
     .project_container {
         background-color: var(--first-color-second);
         border-radius: 1rem;
-        padding: 3rem 2.5rem 0;
+        padding: 2rem;
         grid-template-columns: 1fr max-content;
         column-gap: 3rem;
     }
@@ -1070,6 +1043,11 @@ button {
 }
 
 /* For large devices */
+@media screen and (min-width: 965px) {
+    .button-white {
+        width: 8rem;
+    }
+}
 @media screen and (min-width: 1024px) {
     .header.
     .main,
