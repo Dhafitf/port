@@ -1,23 +1,3 @@
-/*==================== SKILLS ====================*/
-const skillsContent = document.getElementsByClassName('skills_content'),
-      skillsHeader = document.querySelectorAll('.skills_header')
-
-function toggleSkills () {
-    let itemClass = this.parentNode.className
-    
-    for(i = 0; i < skillsContent.length; i++) {
-        skillsContent[i].className = 'skills_content skills_close'
-    }
-    if(itemClass === 'skills_content skills_close'){
-        this.parentNode.className = 'skills_content skills_open'
-    }
-}
-
-skillsHeader.forEach((el) => {
-    el.addEventListener('click', toggleSkills)
-})
-
-
 /*==================== SERVICES MODAL ====================*/
 const modalViews = document.querySelectorAll('.services_modal'),
       modalBtns = document.querySelectorAll('.services_button'),
@@ -69,6 +49,30 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
+/*==================== QUALI ====================*/
+function dev(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("tabsActive").click();
+
 /*==================== SHOW SCROLL UP ====================*/ 
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');
@@ -79,15 +83,25 @@ window.addEventListener('scroll', scrollUp)
 
 /*==================== Scroll ====================*/ 
 const sr = ScrollReveal({
-    origin: 'top',
     distance: '30px',
     duration: 900,
     reset: false
 });
 
 sr.reveal(`.section_title, .section_subtitle, 
-            .home_social, .home_data, .home_img,
-            .about_data, .about_img, .grid_project,
-            .tools-img-content, .skills_header, .skills_data`, {
-    interval: 50
+            .home-social, .home_data, .home_img,
+            .about_data, .about_img,
+            .tools-img-content`, {
+    interval: 50,
+    origin: 'top',
+})
+
+sr.reveal(`.home-social, .tentang-text`, {
+    interval: 150,
+    origin: 'left',
+})
+
+sr.reveal(`.title-ts, .skills_header, .skills_data`, {
+    interval: 100,
+    origin: 'right',
 })
