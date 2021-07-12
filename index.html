@@ -23,23 +23,23 @@
                       <div class="nav">
                         <a href="#home" class="nav_link">
                             <i class="uil uil-estate nav_icon"></i>
-                            <span class="nav__text">Home</span>
+                            <span class="nav__text">Beranda</span>
                         </a>
-                        <a href="#about" class="nav_link nav_link-active">
+                        <a href="#tentang" class="nav_link nav_link-active">
                             <i class="uil uil-user nav_icon"></i>
-                            <span class="nav_text">About</span>
+                            <span class="nav_text">Tentang</span>
                         </a>
-                        <a href="#skills" class="nav_link">
+                        <a href="#jasa" class="nav_link">
                             <i class="uil uil-file-alt nav_icon"></i>
-                            <span class="nav_text">Skills</span>
+                            <span class="nav_text">Jasa</span>
                         </a>
-                        <a href="#services" class="nav_link">
+                        <a href="#projek" class="nav_link">
                             <i class="uil uil-briefcase-alt nav_icon"></i>
-                            <span class="nav_text">Services</span>
+                            <span class="nav_text">Projek</span>
                         </a>
-                        <a href="#project" class="nav_link">
+                        <a href="#project" class="nav_link button button--flex">
                             <i class="uil uil-message nav_icon"></i>
-                            <span class="nav_text">Contact</span>
+                            <span class="nav_text">Kontak</span>
                         </a>
                         </div>
             </nav>
@@ -48,10 +48,24 @@
         <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home_container container grid">
-                    <div class="home_content grid">
-                        <div class="home_social">
+            <section class="home section container" id="home">
+                        <div class="home_data">
+                            <h1 class="home_title">Halo, nama saya</h1>
+                        </div>
+                        <div class="home_data">
+                            <h2 class="home_subtitle">Dhafit Farenza.</h2>
+                        </div>
+                        <div class="home_data">
+                            <h3 class="home_subtitle">Seorang penerjemah.</h3>
+                        </div>
+                        <div class="home_data">
+                            <p class="home_desc">Saya seorang penerjemah, yang biasanya menerjemahkan bahasa Jepang dan Inggris ke bahasa Indonesia. Hubungi saya jika ingin berkerja sama.</p>
+                        </div>
+                           <div class="home-bar">
+                            <a href="#contact" class="button button--flex">
+                                Hubungi <i class="uil uil-envelope-alt button_icon"></i>
+                            </a>
+                            <div class="home-social">
                             <a href="https://www.instagram.com/dhafitf/" target="_blank" class="home_social-icon">
                                 <i class="uil uil-instagram"></i>
                             </a>
@@ -61,231 +75,109 @@
                             <a href="https://www.facebook.com/dhafid.farenza" target="_blank" class="home_social-icon">
                                 <i class="uil uil-facebook-f"></i>
                             </a>
-                        </div>
-                        <div class="home_img">
-                            <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home_blog-img" x='12' y='18' xlink:href="assets/img/perfil.png"/>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="home_data">
-                            <h1 class="home_title">Hi, I'm DevzFz</h1>
-                            <h3 class="home_subtitle">Translator & Designer</h3>
-                            <p class="home_description">Hello I'm Dhafit Farenza aka DevzFz, from Indonesia. I made a fansub for the Japanese idol Nogizaka46, named Nogisub.
- I can also create a UI Design, and also make a website from that design.
- I look forward to collaborating with you!</p>
-                            <a href="#contact" class="button button--flex">
-                                Contact Me <i class="uil uil-message button_icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                            </div>
+                            </div>
             </section>
             
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section_title">Skills</h2>
-                <span class="section_subtitle">My technical level</span>
-            <div class="skills_container container grid">
-                <div>
+            <!--==================== Tentang & Skill ====================-->
+            <section class="ts section" id="tentang">
+            <div class="ts_container container grid">
+                <div class="tentang">
+                   <h1 class="title-ts">Tentang</h1>
+                    <p class="tentang-text">Halo, saya Dhafit Farenza atau biasa dikenal sebagai Devzfz. Saya seorang penerjemah, yang biasanya menerjemahkan bahasa Jepang dan Inggris ke bahasa Indonesia. Saya sudah mulai menerjemahkan video selama lebih dari 1 tahun. Saya juga membuat fansub untuk salah satu grup Idol Jepang yaitu Nogizaka46, bernama Nogisub.</p>
+                </div>
+                <div class="skill-saya">
+                    <h1 class="title-ts">Skill</h1>
             <!--==================== SKILLS 1 ====================-->
-                   <div class="skills_content skills_open">
+                   <div class="skills_content">
                        <div class="skills_header">
-                           <i class="uil uil-brackets-curly skills_icon"></i>
+                           <i class="uil uil-clapper-board skills_icon"></i>
                            <div>
-                               <h1 class="skills_title">Frontend developer</h1>
-                               <span class="skills_subtitle">More than 4 years</span>
-                           </div>
-                           <i class="uil uil-angle-down skills_arrow"></i>
-                       </div>
-                       <div class="skills_list grid">
-                           <div class="skills_data">
-                           <div class="skills_titles">
-                               <h3 class="skills_name">HTML</h3>
-                               <span class="skills_number">90%</span>
-                           </div>
-                           <div class="skills_bar">
-                               <span class="skills_percentage skills_html"></span>
-                           </div>
+                               <h1 class="skills_title">Penerjemah</h1>
+                                    <ul class="skills-ul">                             
+                                        <li class="skills-li"><a class="skills-a">Bahasa</a></li>
+                                        <li class="skills-li"><a class="skills-a">Inggris</a></li>
+                                        <li class="skills-li"><a class="skills-a">Jepang</a></li>
+                                    </ul>
                            </div>
                        </div>
-                       <div class="skills_list grid">
-                           <div class="skills_data">
-                           <div class="skills_titles">
-                               <h3 class="skills_name">CSS</h3>
-                               <span class="skills_number">80%</span>
-                           </div>
-                           <div class="skills_bar">
-                               <span class="skills_percentage skills_css"></span>
-                           </div>
-                           </div>
-                       </div>
-                       <div class="skills_list grid">
-                           <div class="skills_data">
-                           <div class="skills_titles">
-                               <h3 class="skills_name">JavaScript</h3>
-                               <span class="skills_number">60%</span>
-                           </div>
-                           <div class="skills_bar">
-                               <span class="skills_percentage skills_js"></span>
-                           </div>
-                           </div>
-                       </div>
-                       <div class="skills_list grid">
-                           <div class="skills_data">
-                           <div class="skills_titles">
-                               <h3 class="skills_name">React</h3>
-                               <span class="skills_number">85%</span>
-                           </div>
-                           <div class="skills_bar">
-                               <span class="skills_percentage skills_react"></span>
-                           </div>
-                           </div>
-                       </div>
-                   </div>
-                   </div>
-                   <div>
+                </div>
             <!--==================== SKILLS 2 ====================-->
-                   <div class="skills_content skills_close">
+                   <div class="skills_content">
                        <div class="skills_header">
-                           <i class="uil uil-brackets-curly skills_icon"></i>
+                           <i class="uil uil-clapper-board skills_icon"></i>
                            <div>
-                               <h1 class="skills_title">Frontend developer</h1>
-                               <span class="skills_subtitle">More than 4 years</span>
+                               <h1 class="skills_title">Frontend Web</h1>
+                                    <ul class="skills-ul">                             
+                                        <li class="skills-li"><a class="skills-a">HTML</a></li>
+                                        <li class="skills-li"><a class="skills-a">CSS</a></li>
+                                        <li class="skills-li"><a class="skills-a">JavaScript</a></li>
+                                    </ul>
+                                </div>
                            </div>
-                           <i class="uil uil-angle-down skills_arrow"></i>
+                           
                        </div>
-                       <div class="skills_list grid">
-                           <div class="skills_data">
-                           <div class="skills_titles">
-                               <h3 class="skills_name">HTML</h3>
-                               <span class="skills_number">90%</span>
-                           </div>
-                           <div class="skills_bar">
-                               <span class="skills_percentage skills_html"></span>
-                           </div>
-                           </div>
-                       </div>
-                       <div class="skills_list grid">
-                           <div class="skills_data">
-                           <div class="skills_titles">
-                               <h3 class="skills_name">CSS</h3>
-                               <span class="skills_number">80%</span>
-                           </div>
-                           <div class="skills_bar">
-                               <span class="skills_percentage skills_css"></span>
-                           </div>
-                           </div>
-                       </div>
-                       <div class="skills_list grid">
-                           <div class="skills_data">
-                           <div class="skills_titles">
-                               <h3 class="skills_name">JavaScript</h3>
-                               <span class="skills_number">60%</span>
-                           </div>
-                           <div class="skills_bar">
-                               <span class="skills_percentage skills_js"></span>
-                           </div>
-                           </div>
-                       </div>
-                       <div class="skills_list grid">
-                           <div class="skills_data">
-                           <div class="skills_titles">
-                               <h3 class="skills_name">React</h3>
-                               <span class="skills_number">85%</span>
-                           </div>
-                           <div class="skills_bar">
-                               <span class="skills_percentage skills_react"></span>
-                           </div>
-                           </div>
-                       </div>
-                   </div>
-                   </div>
-                   <div>
             <!--==================== SKILLS 3 ====================-->
-                   <div class="skills_content skills_close">
+                   <div class="skills_content">
                        <div class="skills_header">
-                           <i class="uil uil-brackets-curly skills_icon"></i>
+                           <i class="uil uil-clapper-board skills_icon"></i>
                            <div>
-                               <h1 class="skills_title">Frontend developer</h1>
-                               <span class="skills_subtitle">More than 4 years</span>
+                               <h1 class="skills_title">Desain Grafis</h1>
+                                    <ul class="skills-ul">                             
+                                        <li class="skills-li"><a class="skills-a">Photoshop</a></li>
+                                        <li class="skills-li"><a class="skills-a">Illustrator</a></li>
+                                        <li class="skills-li"><a class="skills-a">Figma</a></li>
+                                    </ul>
+                                </div>
                            </div>
-                           <i class="uil uil-angle-down skills_arrow"></i>
+                           
                        </div>
-                       <div class="skills_list grid">
-                           <div class="skills_data">
-                           <div class="skills_titles">
-                               <h3 class="skills_name">HTML</h3>
-                               <span class="skills_number">90%</span>
-                           </div>
-                           <div class="skills_bar">
-                               <span class="skills_percentage skills_html"></span>
-                           </div>
-                           </div>
-                       </div>
-                       <div class="skills_list grid">
-                           <div class="skills_data">
-                           <div class="skills_titles">
-                               <h3 class="skills_name">CSS</h3>
-                               <span class="skills_number">80%</span>
-                           </div>
-                           <div class="skills_bar">
-                               <span class="skills_percentage skills_css"></span>
-                           </div>
-                           </div>
-                       </div>
-                       <div class="skills_list grid">
-                           <div class="skills_data">
-                           <div class="skills_titles">
-                               <h3 class="skills_name">JavaScript</h3>
-                               <span class="skills_number">60%</span>
-                           </div>
-                           <div class="skills_bar">
-                               <span class="skills_percentage skills_js"></span>
-                           </div>
-                           </div>
-                       </div>
-                       <div class="skills_list grid">
-                           <div class="skills_data">
-                           <div class="skills_titles">
-                               <h3 class="skills_name">React</h3>
-                               <span class="skills_number">85%</span>
-                           </div>
-                           <div class="skills_bar">
-                               <span class="skills_percentage skills_react"></span>
-                           </div>
-                           </div>
-                       </div>
-                   </div>
                 </div>
             </div>
             </section>
+            
+            <!--==================== TOOLS ====================-->
+            <section class="tools section" id="tools">
+                <h2 class="section_title">Alat</h2>
+                <span class="section_subtitle">Software yang saya pakai</span>
+
+                <div class="tools_container container">
+                   <div class="tools-img-content">
+                        <img src="assets/img/aegisub.png" alt="" class="tools-img">
+                    </div>
+                    <div class="tools-img-content">
+                        <img src="assets/img/ps.png" alt="" class="tools-img">
+                    </div>
+                    <div class="tools-img-content">
+                        <img src="assets/img/ai.png" alt="" class="tools-img">
+                    </div>
+                    <div class="tools-img-content">
+                        <img src="assets/img/ae.png" alt="" class="tools-img">
+                    </div>
+                    <div class="tools-img-content">
+                        <img src="assets/img/vegas.png" alt="" class="tools-img">
+                    </div>
+                    <div class="tools-img-content">
+                        <img src="assets/img/figma.png" alt="" class="tools-img">
+                    </div>
+                </div>
+
+            </section>
 
             <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                <h2 class="section_title">Services</h2>
-                <span class="section_subtitle">What i offer</span>
+            <section class="jasa section" id="jasa">
+                <h2 class="section_title">Jasa</h2>
+                <span class="section_subtitle">Yang saya tawarkan</span>
                 
                 <div class="services_container container grid">
                     <!--==================== SERVICE1 ====================-->
                     <div class="services_content">
                         <div class="services-box">
                         <i class="uil uil-web-grid services_icon"></i>
-                        <h3 class="services_title">Frontend</h3>
-                        <p class="services_subtitle">4 Project</p>
+                        <h3 class="services_title">Frontend Web</h3>
+                        <p class="services_subtitle">Membuat tampilan untuk sebuah website</p>
                         </div>
-                    <span class="button button--flex button-small button-link services_button">View More
+                    <span class="button button--flex button-small button-link services_button">Lihat selengkapnya
                     </span>
                     
                     <div class="services_modal">
@@ -316,11 +208,11 @@
                     <!--==================== SERVICE2 ====================-->
                     <div class="services_content">
                         <div class="services-box">
-                        <i class="uil uil-web-grid services_icon"></i>
+                        <i class="uil uil-clapper-board services_icon"></i>
                         <h3 class="services_title">Translator</h3>
-                        <p class="services_subtitle">100+ Project</p>
+                        <p class="services_subtitle">Menerjemahkan video, audio dan teks</p>
                         </div>
-                    <span class="button button--flex button-small button-link services_button">View More
+                    <span class="button button--flex button-small button-link services_button">Lihat selengkapnya
                     </span>
                     
                     <div class="services_modal">
@@ -351,11 +243,11 @@
                     <!--==================== SERVICE3 ====================-->
                     <div class="services_content">
                         <div class="services-box">
-                        <i class="uil uil-web-grid services_icon"></i>
+                        <i class="uil uil-image services_icon"></i>
                         <h3 class="services_title">Designer</h3>
-                        <p class="services_subtitle">4 Project</p>
+                        <p class="services_subtitle">Membuat desain berupa gambar</p>
                         </div>
-                    <span class="button button--flex button-small button-link services_button">View More
+                    <span class="button button--flex button-small button-link services_button">Lihat selengkapnya
                     </span>
                     
                     <div class="services_modal">
@@ -384,34 +276,6 @@
                     </div>
                 </div>
                 </div>
-            </section>
-
-            <!--==================== PORTFOLIO ====================-->
-            <section class="tools section" id="tools">
-                <h2 class="section_title">Tools</h2>
-                <span class="section_subtitle">What i offer</span>
-
-                <div class="tools_container container">
-                   <div class="tools-img-content">
-                        <img src="assets/img/aegisub.png" alt="" class="tools-img">
-                    </div>
-                    <div class="tools-img-content">
-                        <img src="assets/img/ps.png" alt="" class="tools-img">
-                    </div>
-                    <div class="tools-img-content">
-                        <img src="assets/img/ai.png" alt="" class="tools-img">
-                    </div>
-                    <div class="tools-img-content">
-                        <img src="assets/img/ae.png" alt="" class="tools-img">
-                    </div>
-                    <div class="tools-img-content">
-                        <img src="assets/img/vegas.png" alt="" class="tools-img">
-                    </div>
-                    <div class="tools-img-content">
-                        <img src="assets/img/figma.png" alt="" class="tools-img">
-                    </div>
-                </div>
-
             </section>
 
             <!--==================== PROJECT IN MIND ====================-->
@@ -512,12 +376,340 @@
                                 </a>
                             </div>
                             <div class="entry-header">
-                                <h2 class="entry-title"> <a href="https://www.nogisub.com/" class="entry-title-link">Koujichuu eps 309</a></h2>
+                                <h2 class="entry-title"> <a href="https://www.nogisub.com/" class="entry-title-link">Koujichuu eps 310</a></h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            
+            <!--==================== Quali ====================-->  
+            <section class="quali section">
+                 <h2 class="section_title">Quali</h2>
+                 <span class="section_subtitle">My personal</span>
+                 
+                 <div class="quali_container container">
+                     <div class="quali_tabs">
+                         <div class="quali_button button-flex quali_active" data-target='#edu'>
+                             <i class="uil uil-briefcase-alt quali-icon"></i>
+                             Education
+                         </div>
+                         <div class="quali_button button-flex" data-target='#work'>
+                             <i class="uil uil-briefcase-alt quali-icon"></i>
+                             Work
+                         </div>
+                     </div>
+                     
+                     <div class="quali_sec">
+                         <!--==================== Quali Sec 1 ====================-->
+                         <div class="quali_content quali_active" data-content id="edu">
+                             <!--==================== Content 1 ====================-->
+                             <div class="quali_data">
+                                 <div>
+                                     <h3 class="quali_title">Computer Enginner</h3>
+                                     <span class="quali_subtitle">Peru - University</span>
+                                     <div class="quali_calendar">
+                                         <i class="uil uil-calendar-alt"></i>
+                                         2009 - 2014
+                                     </div>
+                                 </div>
+                                 <div>
+                                     <span class="quali_rounder"></span>
+                                     <span class="quali_line"></span>
+                                 </div>
+                             </div>
+                             <!--==================== Content 2 ====================-->
+                             <div class="quali_data">
+                                 <div>
+                                     <span class="quali_rounder"></span>
+                                     <span class="quali_line"></span>
+                                 </div>
+                                 <div>
+                                     <h3 class="quali_title">Computer Enginner</h3>
+                                     <span class="quali_subtitle">Peru - University</span>
+                                     <div class="quali_calendar">
+                                         <i class="uil uil-calendar-alt"></i>
+                                         2009 - 2014
+                                     </div>
+                                 </div>
+                             </div>
+                             <!--==================== Content 3 ====================-->
+                             <div class="quali_data">
+                                 <div>
+                                     <h3 class="quali_title">Computer Enginner</h3>
+                                     <span class="quali_subtitle">Peru - University</span>
+                                     <div class="quali_calendar">
+                                         <i class="uil uil-calendar-alt"></i>
+                                         2009 - 2014
+                                     </div>
+                                 </div>
+                                 <div>
+                                     <span class="quali_rounder"></span>
+                                     <span class="quali_line"></span>
+                                 </div>
+                             </div>
+                             <!--==================== Content 4 ====================-->
+                             <div class="quali_data">
+                                 <div>
+                                     <h3 class="quali_title">Computer Enginner</h3>
+                                     <span class="quali_subtitle">Peru - University</span>
+                                     <div class="quali_calendar">
+                                         <i class="uil uil-calendar-alt"></i>
+                                         2009 - 2014
+                                     </div>
+                                 </div>
+                                 <div>
+                                     <span class="quali_rounder"></span>
+                                     <span class="quali_line"></span>
+                                 </div>
+                             </div>
+                         </div>
+                         <!--==================== Quali Sec 2 ====================-->
+                         <div class="quali_content" data-content id="work">
+                             <!--==================== Content 1 ====================-->
+                             <div class="quali_data">
+                                 <div>
+                                     <h3 class="quali_title">Enginner</h3>
+                                     <span class="quali_subtitle">Peru - University</span>
+                                     <div class="quali_calendar">
+                                         <i class="uil uil-calendar-alt"></i>
+                                         2009 - 2014
+                                     </div>
+                                 </div>
+                                 <div>
+                                     <span class="quali_rounder"></span>
+                                     <span class="quali_line"></span>
+                                 </div>
+                             </div>
+                             <!--==================== Content 2 ====================-->
+                             <div class="quali_data">
+                                 <div>
+                                     <span class="quali_rounder"></span>
+                                     <span class="quali_line"></span>
+                                 </div>
+                                 <div>
+                                     <h3 class="quali_title">Computer Enginner</h3>
+                                     <span class="quali_subtitle">Peru - University</span>
+                                     <div class="quali_calendar">
+                                         <i class="uil uil-calendar-alt"></i>
+                                         2009 - 2014
+                                     </div>
+                                 </div>
+                             </div>
+                             <!--==================== Content 3 ====================-->
+                             <div class="quali_data">
+                                 <div>
+                                     <h3 class="quali_title">Computer Enginner</h3>
+                                     <span class="quali_subtitle">Peru - University</span>
+                                     <div class="quali_calendar">
+                                         <i class="uil uil-calendar-alt"></i>
+                                         2009 - 2014
+                                     </div>
+                                 </div>
+                                 <div>
+                                     <span class="quali_rounder"></span>
+                                     <span class="quali_line"></span>
+                                 </div>
+                             </div>
+                             <!--==================== Content 4 ====================-->
+                             <div class="quali_data">
+                                 <div>
+                                     <h3 class="quali_title">Computer Enginner</h3>
+                                     <span class="quali_subtitle">Peru - University</span>
+                                     <div class="quali_calendar">
+                                         <i class="uil uil-calendar-alt"></i>
+                                         2009 - 2014
+                                     </div>
+                                 </div>
+                                 <div>
+                                     <span class="quali_rounder"></span>
+                                     <span class="quali_line"></span>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+            </section>
+                 
+            <!--==================== CUK ====================-->
+            <section class="cuk section" id="projek">
+                <h2 class="section_title">Projek</h2>
+                <span class="section_subtitle">Projek terselesaikan</span>
+               <div class="tabs container">
+                <div class="tab">
+  <li class="tablinks" onclick="dev(event, 'Translate')" id="tabsActive">Terjemahan</li>
+  <li class="tablinks" onclick="dev(event, 'Design')">Desain</li>
+</div>
+
+            <!-- Tab content -->
+                <div id="Translate" class="tabcontent">
+                    <div class="post_container container grid">
+                    <!--==================== POST CARD 1 ====================-->
+                    <div class="grid_project">
+                        <div class="post-grid">
+                            <div class="entry-image">
+                                <a href="https://www.nogisub.com/" class="img-post">
+                                <img src="assets/img/post1.jpg" alt="" class="post_img">
+                                </a>
+                            </div>
+                            <div class="entry-header">
+                                <h2 class="entry-title"> <a href="https://www.nogisub.com/" class="entry-title-link">Koujichuu eps 306</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== POST CARD 2 ====================-->
+                    <div class="grid_project">
+                        <div class="post-grid">
+                            <div class="entry-image">
+                                <a href="https://www.nogisub.com/" class="img-post">
+                                <img src="assets/img/post2.jpg" alt="" class="post_img">
+                                </a>
+                            </div>
+                            <div class="entry-header">
+                                <h2 class="entry-title"> <a href="https://www.nogisub.com/" class="entry-title-link">Koujichuu eps 307</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== POST CARD 3 ====================-->
+                    <div class="grid_project">
+                        <div class="post-grid">
+                            <div class="entry-image">
+                                <a href="https://www.nogisub.com/" class="img-post">
+                                <img src="assets/img/post3.jpg" alt="" class="post_img">
+                                </a>
+                            </div>
+                            <div class="entry-header">
+                                <h2 class="entry-title"> <a href="https://www.nogisub.com/" class="entry-title-link">Koujichuu eps 308</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== POST CARD 4 ====================-->
+                    <div class="grid_project">
+                        <div class="post-grid">
+                            <div class="entry-image">
+                                <a href="https://www.nogisub.com/" class="img-post">
+                                <img src="assets/img/post4.jpg" alt="" class="post_img">
+                                </a>
+                            </div>
+                            <div class="entry-header">
+                                <h2 class="entry-title"> <a href="https://www.nogisub.com/" class="entry-title-link">Koujichuu eps 309</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== POST CARD 5 ====================-->
+                    <div class="grid_project">
+                        <div class="post-grid">
+                            <div class="entry-image">
+                                <a href="https://www.nogisub.com/" class="img-post">
+                                <img src="assets/img/post5.jpg" alt="" class="post_img">
+                                </a>
+                            </div>
+                            <div class="entry-header">
+                                <h2 class="entry-title"> <a href="https://www.nogisub.com/" class="entry-title-link">Koujichuu eps 309</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== POST CARD 6 ====================-->
+                    <div class="grid_project">
+                        <div class="post-grid">
+                            <div class="entry-image">
+                                <a href="https://www.nogisub.com/" class="img-post">
+                                <img src="assets/img/post6.jpg" alt="" class="post_img">
+                                </a>
+                            </div>
+                            <div class="entry-header">
+                                <h2 class="entry-title"> <a href="https://www.nogisub.com/" class="entry-title-link">Koujichuu eps 310</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div id="Design" class="tabcontent">
+                <div class="post_container container grid">
+                    <!--==================== POST CARD 1 ====================-->
+                    <div class="grid_project">
+                        <div class="post-grid">
+                            <div class="entry-image">
+                                <a href="https://www.nogisub.com/" class="img-post">
+                                <img src="assets/img/post1.jpg" alt="" class="post_img">
+                                </a>
+                            </div>
+                            <div class="entry-header">
+                                <h2 class="entry-title"> <a href="https://www.nogisub.com/" class="entry-title-link">Koujichuu eps 306</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== POST CARD 2 ====================-->
+                    <div class="grid_project">
+                        <div class="post-grid">
+                            <div class="entry-image">
+                                <a href="https://www.nogisub.com/" class="img-post">
+                                <img src="assets/img/post2.jpg" alt="" class="post_img">
+                                </a>
+                            </div>
+                            <div class="entry-header">
+                                <h2 class="entry-title"> <a href="https://www.nogisub.com/" class="entry-title-link">Koujichuu eps 307</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== POST CARD 3 ====================-->
+                    <div class="grid_project">
+                        <div class="post-grid">
+                            <div class="entry-image">
+                                <a href="https://www.nogisub.com/" class="img-post">
+                                <img src="assets/img/post3.jpg" alt="" class="post_img">
+                                </a>
+                            </div>
+                            <div class="entry-header">
+                                <h2 class="entry-title"> <a href="https://www.nogisub.com/" class="entry-title-link">Koujichuu eps 308</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== POST CARD 4 ====================-->
+                    <div class="grid_project">
+                        <div class="post-grid">
+                            <div class="entry-image">
+                                <a href="https://www.nogisub.com/" class="img-post">
+                                <img src="assets/img/post4.jpg" alt="" class="post_img">
+                                </a>
+                            </div>
+                            <div class="entry-header">
+                                <h2 class="entry-title"> <a href="https://www.nogisub.com/" class="entry-title-link">Koujichuu eps 309</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== POST CARD 5 ====================-->
+                    <div class="grid_project">
+                        <div class="post-grid">
+                            <div class="entry-image">
+                                <a href="https://www.nogisub.com/" class="img-post">
+                                <img src="assets/img/post5.jpg" alt="" class="post_img">
+                                </a>
+                            </div>
+                            <div class="entry-header">
+                                <h2 class="entry-title"> <a href="https://www.nogisub.com/" class="entry-title-link">Koujichuu eps 309</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--==================== POST CARD 6 ====================-->
+                    <div class="grid_project">
+                        <div class="post-grid">
+                            <div class="entry-image">
+                                <a href="https://www.nogisub.com/" class="img-post">
+                                <img src="assets/img/post6.jpg" alt="" class="post_img">
+                                </a>
+                            </div>
+                            <div class="entry-header">
+                                <h2 class="entry-title"> <a href="https://www.nogisub.com/" class="entry-title-link">Koujichuu eps 310</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>  
+</div>
+            </section>
+                  
         </main>
 
         <!--==================== FOOTER ====================-->
